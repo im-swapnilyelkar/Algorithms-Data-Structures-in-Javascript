@@ -1,0 +1,28 @@
+{
+  "name": "com.im-swapnilyelkar.algorithms-js",
+  "version": "1.0.0",
+  "description": "Alogorithms & Datastructures in JS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {   
+    "start": "node index.js",    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/im-swapnilyelkar/Algorithms-JS.git"
+  },
+  "keywords": [
+    "algorithms",
+    "datastuctures",
+    "js",
+    "ds",
+    "algo"
+  ],
+  "author": "Swapnil Yelkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/im-swapnilyelkar/Algorithms-JS/issues"
+  },
+  "homepage": "https://github.com/im-swapnilyelkar/Algorithms-JS#readme"
+}
