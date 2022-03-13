@@ -7,7 +7,7 @@ export default function _Array(){
         "writable":true,
         "enumerable":false,
     });
-    arr.length = 0;
+   
     for(const key in arguments){
         arr[key] = arguments[key];
         arr.length += 1; 
