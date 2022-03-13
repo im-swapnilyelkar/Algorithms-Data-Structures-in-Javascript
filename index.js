@@ -13,4 +13,10 @@ console.log("deleted item :" , myArray.pop());
 console.log(myArray);
 console.log("Updated length:",myArray.length);
 
+var filterData =  myArray.filter((name,index)=> { 
+    console.log(index)
+    return name.charAt(0)!== "A"; // True or False
+});
+console.log("Filter Array" , filterData);
+
 
