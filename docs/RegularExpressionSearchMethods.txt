@@ -1,0 +1,10 @@
+Regular Expression Search Methods.
+Example	Description
+
+text.match(pattern)	The String method match()
+text.search(pattern) The String method search()
+pattern.exec(text)	The RexExp method exec()
+pattern.test(text)	The RegExp method test()
+
+Docs:
+https://www3.ntu.edu.sg/home/ehchua/programming/howto/Regexe.html

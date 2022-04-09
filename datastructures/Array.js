@@ -1,6 +1,6 @@
 
 
-export default function _Array(){
+export function _Array(){
     const arr = Object.create(_Array.prototype);
     Object.defineProperty(arr,"length",{
         "value":0,
@@ -55,4 +55,26 @@ _Array.prototype.filter = function(cb){
     return result;
 
 }
+
+
+/** Algo Use Cases */
+export function executeArrayUseCases() {
+    console.log("#Array Implementation : ");
+    const myArray = _Array("Swapnil", "Apoorva", "Anshu", "Ayansh");
+    console.log(myArray);
+    console.log("Original length:", myArray.length);
+    console.log("push newSwap now length is  :", myArray.push("newSwap"));
+    console.log("push newApoo now length is :", myArray.push("newApoo"));
+    console.log(myArray);
+    console.log("deleted item :", myArray.pop());
+    console.log(myArray);
+    console.log("Updated length:", myArray.length);
+  
+    var filterData = myArray.filter((name, index) => {
+      console.log(index);
+      return name.charAt(0) !== "A"; // True or False
+    });
+    console.log("Filter Array", filterData);
+  }
+  
 
