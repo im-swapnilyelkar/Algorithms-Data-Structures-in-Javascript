@@ -28,6 +28,7 @@ For each IDi, there will be at least five scores.
  */
 
 export function highFive(items) {
+
   Array.prototype.sum = function () {
     return this.length ? this.reduce((prev, curr) => prev + curr) : 0;
   };
@@ -48,7 +49,7 @@ export function highFive(items) {
     let highFive = topScores.splice(0, 5).sum() / 5;
     highFiveScore.push([id, parseInt(highFive)]);
   });
-  return highFiveScore.sort((a, b) => a[1] - b[1]);
+  return highFiveScore.sort((a, b) => a[0] - b[0]);
 }
 
 export function executeHighFiveUseCase() {
@@ -65,9 +66,11 @@ export function executeHighFiveUseCase() {
     [2, 100],
     [2, 76],
   ];
-  console.log(highFive(items));
+  console.log(JSON.stringify(highFive(items)));
 
-  let items2 = [[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100]]
+  let items2 = [[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100]];
   console.log(JSON.stringify(highFive(items2)));
 
+  let items3 = [[1,84],[1,72],[1,47],[1,43],[1,78],[2,79],[2,4],[2,23],[2,88],[2,79],[3,75],[3,80],[3,38],[3,73],[3,4]];
+  console.log(JSON.stringify(highFive(items3)));
 }
